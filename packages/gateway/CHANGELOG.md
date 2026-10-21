@@ -1,5 +1,15 @@
 # @ai-sdk/gateway
 
+## 4.0.122
+
+### Patch Changes
+
+- 101ce42: chore(provider/gateway): update gateway model settings files
+- e104368: Add Voxtral 3 offline transcription and speech model IDs. Support transcription context phrases and detected language, update timestamp validation for Voxtral 3, and expose speech expressiveness and pronunciation hints.
+- Updated dependencies [10026d1]
+  - @ai-sdk/provider@4.0.32
+  - @ai-sdk/provider-utils@5.0.66
+
 ## 4.0.121
 
 ### Patch Changes
