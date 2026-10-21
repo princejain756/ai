@@ -429,7 +429,7 @@ export class OpenTelemetry implements Telemetry {
       ...baseSupplementalAttributes,
     });
 
-    const spanName = `${operationName} ${event.modelId}`;
+    const spanName = `${operationName} ${event.functionId ?? event.modelId}`;
     const rootSpan = this.tracer.startSpan(spanName, {
       attributes: this.getSpanAttributes({
         attributes,
@@ -536,7 +536,7 @@ export class OpenTelemetry implements Telemetry {
       }),
     });
 
-    const spanName = `${operationName} ${event.modelId}`;
+    const spanName = `${operationName} ${event.functionId ?? event.modelId}`;
     const rootSpan = this.tracer.startSpan(spanName, {
       attributes: this.getSpanAttributes({
         attributes,
